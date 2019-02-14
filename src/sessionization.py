@@ -101,12 +101,9 @@ class analyze_weblog:
 
 if __name__ == '__main__':
    args = sys.argv
-   # log_csv = str(args[1])
-   log_csv="../input/log.csv"
-   inactivity_file="../input/inactivity_period.txt"
-   output_file="../output/sessionization.txt"
-   #inactivity_file = str(args[2])
-   #output_file = args[3]
+   log_csv = str(args[1])
+   inactivity_file = str(args[2])
+   output_file = args[3]
    a = analyze_weblog(log_csv, inactivity_file, output_file)
    a.read_weblog()
 
