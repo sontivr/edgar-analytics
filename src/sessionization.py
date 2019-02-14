@@ -101,20 +101,10 @@ class analyze_weblog:
 
 if __name__ == '__main__':
    args = sys.argv
-   # log_csv = str(args[1])
-   log_csv="../input/log.csv"
-   inactivity_file="../input/inactivity_period.txt"
-   output_file="../output/sessionization.txt"
-   #inactivity_file = str(args[2])
-   #output_file = args[3]
+   log_csv = str(args[1])
+   inactivity_file = str(args[2])
+   output_file = args[3]
    a = analyze_weblog(log_csv, inactivity_file, output_file)
    a.read_weblog()
 
-'''
-101.81.133.jja,2017-06-30 00:00:00,2017-06-30 00:00:00,1,1
-108.91.91.hbc,2017-06-30 00:00:01,2017-06-30 00:00:01,1,1
-107.23.85.jfd,2017-06-30 00:00:00,2017-06-30 00:00:03,4,4
-106.120.173.jie,2017-06-30 00:00:02,2017-06-30 00:00:02,1,1
-107.178.195.aag,2017-06-30 00:00:02,2017-06-30 00:00:04,3,2
-108.91.91.hbc,2017-06-30 00:00:04,2017-06-30 00:00:04,1,1
-'''
+
